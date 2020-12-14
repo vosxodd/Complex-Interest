@@ -1,4 +1,4 @@
-years=int(input("Срок размещения капитала (лет):")
+years=int(input("Срок размещения капитала (лет):"))
 capital=float(input("Начальный капитал ($):"))
 percent=float(input("Процентная ставка (%/мес.):"))
 investment=float(input("Инвестиционные вливания ($/мес.):"))
