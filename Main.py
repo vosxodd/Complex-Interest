@@ -8,14 +8,18 @@ for i in range (1,years+1):
     print("|         |   основа   | сумма %   |          |")
     print("| месяц   | инвестиций | за месяц  | капитал  |")
     print("-----------------------------------------------")
-    for j in range (1,13):
-          if i==1 and j==1:
-              print("|    ",j,"    | ",capital,"    |   "   "%.2f"%(capital*percent/100)   "   | ",capital+"%.2f"%(capital*percent/100),"  |")
-          else:
-              capital+=investment+"%.2f"%(capital*percent/100)
-              print("|    ",j,"    | ",(capital),"    |   ","%.2f"%(capital*percent/100),"   | ",capital+"%.2f"%(capital*percent/100),"  |")
-              
-
+    for j in range(1, 13):
+        if i == 1 and j == 1:
+            print("|    ", j, "    | ", capital, "    |   ", round(capital * percent / 100, 2), "   | ",
+                  capital + round(capital * percent / 100), "  |")
+        elif 1<=j<=9:
+            capital += investment + round(capital * percent / 100)
+            print("|    ", j, "    | ", (capital), "    |   ", round(capital * percent / 100, 2), "   | ",
+                  capital + round(capital * percent / 100), "  |")
+        elif j>9:
+            capital += investment + round(capital * percent / 100)
+            print("|   ", j, "    | ", (capital), "    |   ", round(capital * percent / 100, 2), "   | ",
+                  capital + round(capital * percent / 100), "  |")
 
 
 
