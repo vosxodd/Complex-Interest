@@ -1,3 +1,7 @@
+# Case-study #3
+# Developers:   Aksenov A. (45%),
+#               Soloveychik D. (41%),
+#               Labuzov A. (43%)
 years=int(input("Срок размещения капитала (лет):"))
 capital=float(input("Начальный капитал ($):"))
 percent=float(input("Процентная ставка (%/мес.):"))
